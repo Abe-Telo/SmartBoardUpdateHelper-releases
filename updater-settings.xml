@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Smart Board Update Helper
+  File name: updater-settings.xml
+
+  Fill in the school and classroom prefix, then give this file to the installer
+  with the helper app. The app reads it and fills in the school.
+  The installer only types the classroom number.
+
+  How to use it
+  1. Keep this file named updater-settings.xml. Do not rename it.
+  2. Type the school name between the school tags.
+  3. Type the classroom prefix between the classroom-prefix tags.
+     The prefix is added in front of the number they type.
+     Example: prefix "Room " and they type 102, the helper submits "Room 102".
+     Leave a space at the end when the prefix is a word, such as "Room " or "Class ".
+  4. Copy the file onto the phone or SMART board before opening the helper.
+     Put it in the Download folder, or on the main storage of the phone.
+     A USB stick also works if the stick is plugged in and the file is in the root or in Download.
+  5. Open Smart Board Update Helper.
+     The school name is filled in and cannot be changed on that device.
+  6. They tap Submit. The office still has to approve that room before any update can install.
+     This file does not unlock a board.
+
+  What to edit
+  - school: the school name shown on the helper and sent for approval.
+  - classroom-prefix: the text placed in front of the classroom number.
+-->
+<updater-settings>
+  <school></school>
+  <classroom-prefix></classroom-prefix>
+</updater-settings>
